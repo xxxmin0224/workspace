@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet">
+    <title>계절별 작물 - 스타듀밸리</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('img/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .season {
+            margin-bottom: 40px;
+        }
+
+        .season h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .crop-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .crop-table th, .crop-table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .crop-table th {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .crop-table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .crop-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .crop-table td {
+            color: #fff;
+        }
+
+        .crop-image {
+            
+            
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+    </style>
+</head>
+<body>
+    <h1>계절별 작물 - 스타듀밸리</h1>
+    <div class="main-container">
+        <aside class="side-bar">
+          <section class="side-bar__icon-box">
+            <section class="side-bar__icon-1">
+              <div></div>
+              <div></div>
+              <div></div>
+            </section>
+          </section>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-cat"></i> 작물 </a>
+              <ul>
+                <li><a href="crops.html">계절별 작물</a></li>
+                <li><a href="fruits.html">과일 나무</a></li>
+    
+              </ul>
+            </li>
+            <li>
+              <a href="#">동물</a>
+              <ul>
+                <li><a href="#">반려동물</a></li>
+                <li><a href="#">가축</a></li>
+                <li><a href="#">말</a></li>
+                <li><a href="#">동물생산품</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">스킬</a>
+              <ul>
+                <li><a href="#">농사</a></li>
+                <li><a href="#">채광</a></li>
+                <li><a href="#">낚시</a></li>
+                <li><a href="#">전투</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">게임플레이</a>
+              <ul>
+                <li><a href="#">호감도</a></li>
+                <li><a href="#">결혼과 자녀</a></li>
+                <li><a href="#">퀘스트</a></li>
+                <li><a href="#">꾸러미</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+    <div class="container">
+        <div class="season" id="spring">
+            <h2>봄 작물</h2>
+            <table class="crop-table">
+                <thead>
+                    <tr>
+                        <th>작물 이름</th>
+                        <th>씨앗</th>
+                        <th>단계별 성장</th>
+                        <th>수확 상태</th>
+                        <th><img src = "img/Gold.png">씨앗 가격</th>
+                        <th>사용처</th>
+                        <th>다 자라는데 걸리는 시간</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>파스닙</td>
+                        <td><img src="images/parsnip_seed.png" alt="파스닙 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="images/Parsnip_Stage_1.png" alt="파스닙 단계 1" class="crop-image">
+                            <img src="images/Parsnip_Stage_2.png" alt="파스닙 단계 2" class="crop-image">
+                            <img src="images/Parsnip_Stage_3.png" alt="파스닙 단계 3" class="crop-image">
+                            <img src="images/Parsnip_Stage_4.png" alt="파스닙 단계 4" class="crop-image">
+                        </td>
+                        <td><img src="images/Parsnip_Stage_5.png" alt="파스닙 수확" class="crop-image"></td>
+                        <td>20g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/79/Farmer%27s_Lunch.png/24px-Farmer%27s_Lunch.png">농부의 점심<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/76/Parsnip_Soup.png/24px-Parsnip_Soup.png">설탕당근 스프<br>
+                            <img src ="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b3/Bundle_Green.png/24px-Bundle_Green.png">봄 작물 꾸러미<br>
+                            <img src ="https://stardewvalleywiki.com/mediawiki/images/thumb/c/ce/Bundle_Teal.png/24px-Bundle_Teal.png">고품질 작물 꾸러미<br>
+                            <img src ="https://stardewvalleywiki.com/mediawiki/images/b/b6/Pam_Icon.png">팸 (좋아하는 선물)</td>
+                        <td>4일</td>
+                    </tr>
+                    <tr>
+                        <td>쌀</td>
+                        <td><img src="images/Rice_Shoot.png" alt="쌀 새싹" class="crop-image"></td>
+                        <td>
+                            <img src="images/Unmilled_Rice_Stage_1.png" alt="쌀 단계 1" class="crop-image">
+                            <img src="images/Unmilled_Rice_Stage_2.png" alt="쌀 단계 2" class="crop-image">
+                            <img src="images/Unmilled_Rice_Stage_3.png" alt="쌀 단계 3" class="crop-image">
+
+                        </td>
+                        <td><img src="images/Unmilled_Rice_Stage_5.png" alt="쌀 수확" class="crop-image"></td>
+                        <td>40g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/d/da/Rice.png/24px-Rice.png">쌀</td>
+                        <td>6~8일</td>
+                    </tr>
+                    <tr>
+                        <td>감자</td>
+                        <td><img src="images/Potato_Seeds.png" alt="감자 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="images/Potato_Stage_1.png" alt="감자 단계 1" class="crop-image">
+                            <img src="images/Potato_Stage_2.png" alt="감자 단계 2" class="crop-image">
+                            <img src="images/Potato_Stage_3.png" alt="감자 단계 3" class="crop-image">
+                            <img src="images/Potato_Stage_4.png" alt="감자 단계 4" class="crop-image">
+                            <img src="images/Potato_Stage_5.png" alt="감자 단계 5" class="crop-image">
+
+                        </td>
+                        <td><img src="images/Potato_Stage_6.png" alt="감자 수확" class="crop-image"></td>
+                        <td>50g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8f/Hashbrowns.png/24px-Hashbrowns.png">해시브라운<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b3/Bundle_Green.png/24px-Bundle_Green.png">봄 작물 꾸러미<br></td>
+                        <td>6일</td>
+                    </tr>
+                    <tr>
+                        <td>당근</td>
+                        <td><img src="images/Carrot_Seeds.png" alt="당근 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="images/Carrot_Stage_1.png" alt="당근 단계 1" class="crop-image">
+                            <img src="images/Carrot_Stage_2.png" alt="당근 단계 2" class="crop-image">
+                            <img src="images/Carrot_Stage_3.png" alt="당근 단계 3" class="crop-image">
+
+                        </td>
+                        <td><img src="images/Carrot_Stage_4.png" alt="당근 수확" class="crop-image"></td>
+                        <td>너구리 상점에서 교환가능</td>
+                        <td>X</td>
+                        <td>3일</td>
+                    </tr>
+                    <tr>
+                        <td>대황</td>
+                        <td><img src="images/Rhubarb_Seeds.png" alt="대황 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="images/Rhubarb_Stage_1.png" alt="대황 단계 1" class="crop-image">
+                            <img src="images/Rhubarb_Stage_2.png" alt="대황 단계 2" class="crop-image">
+                            <img src="images/Rhubarb_Stage_3.png" alt="대황 단계 3" class="crop-image">
+                            <img src="images/Rhubarb_Stage_4.png" alt="대황 단계 4" class="crop-image">
+                            <img src="images/Rhubarb_Stage_5.png" alt="대황 단계 5" class="crop-image">
+
+                        </td>
+                        <td><img src="images/Rhubarb_Stage_6.png" alt="대황 수확" class="crop-image"></td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/7/7d/Sandy_Icon.png">오아시스:100g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/21/Rhubarb_Pie.png/24px-Rhubarb_Pie.png">대황파이<br>
+                            </td>
+                        <td>6일</td>
+                    </tr>
+                    <tr>
+                        <td>딸기</td>
+                        <td><img src="images/Strawberry_Seeds.png" alt="딸기 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="images/Strawberry_Stage_1.png" alt="딸기 단계 1" class="crop-image">
+                            <img src="images/Strawberry_Stage_2.png" alt="딸기 단계 2" class="crop-image">
+                            <img src="images/Strawberry_Stage_3.png" alt="딸기 단계 3" class="crop-image">
+                            <img src="images/Strawberry_Stage_4.png" alt="딸기 단계 4" class="crop-image">
+                            <img src="images/Strawberry_Stage_5.png" alt="딸기 단계 5" class="crop-image">
+
+                        </td>
+                        <td><img src="images/Strawberry_Stage_6.png" alt="딸기 수확" class="crop-image">
+                        <img src="images/Strawberry_Stage_7.png"><br>재성장:4일</td>
+                        <td>달걀축제:100g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/0/0b/Demetrius_Icon.png">드미트리우스(좋아하는 선물)<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/23/Maru_Icon.png">마루(좋아하는 선물)
+                            </td>
+                        <td>8일</td>
+                    </tr>
+                    <tr>
+                        <td>마늘</td>
+                        <td><img src="images/Garlic_Seeds.png" alt="마늘 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="images/Garlic_Stage_1.png" alt="마늘 단계 1" class="crop-image">
+                            <img src="images/Garlic_Stage_2.png" alt="마늘 단계 2" class="crop-image">
+                            <img src="images/Garlic_Stage_3.png" alt="마늘 단계 3" class="crop-image">
+                            <img src="images/Garlic_Stage_4.png" alt="마늘 단계 4" class="crop-image">
+
+                        </td>
+                        <td><img src="images/Garlic_Stage_5.png" alt="마늘 수확" class="crop-image"></td>
+                        <td>40g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/78/Escargot.png/24px-Escargot.png">에스카르고<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/2d/Fiddlehead_Risotto.png/24px-Fiddlehead_Risotto.png">청나래고사리 리조또<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/4b/Oil_of_Garlic.png/24px-Oil_of_Garlic.png">마늘즙
+                            </td>
+                        <td>4일</td>
+                    </tr>
+                    <tr>
+                        <td>완두콩</td>
+                        <td><img src="images/Bean_Starter.png" alt="콩 종자" class="crop-image"></td>
+                        <td>
+                            <img src="images/Green_Bean_Stage_2.png" alt="콩 단계 1" class="crop-image">
+                            <img src="images/Green_Bean_Stage_3.png" alt="콩 단계 2" class="crop-image">
+                            <img src="images/Green_Bean_Stage_4.png" alt="콩 단계 3" class="crop-image">
+                            <img src="images/Green_Bean_Stage_5.png" alt="콩 단계 4" class="crop-image">
+                            <img src="images/Green_Bean_Stage_6.png" alt="콩 단계 5" class="crop-image">
+
+                        </td>
+                        <td><img src="images/Green_Bean_Stage_7.png" alt="콩 수확" class="crop-image">
+                        <img src="images/Green_Bean_Stage_8.png"><br>재성장:3일</td>
+                        <td>60g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/24/Bean_Hotpot.png/24px-Bean_Hotpot.png">콩 스튜<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b3/Bundle_Green.png/24px-Bundle_Green.png">봄 작물 꾸러미
+                            </td>
+                        <td>10일</td>
+                    </tr>
+                    <tr>
+                        <td>커피콩</td>
+                        <td><img src="images/Coffee_Bean.png" alt="커피콩" class="crop-image"></td>
+                        <td>
+                            <img src="images/Coffee_Stage_1.png" alt="커피 단계 1" class="crop-image">
+                            <img src="images/Coffee_Stage_2.png" alt="커피 단계 2" class="crop-image">
+                            <img src="images/Coffee_Stage_3.png" alt="커피 단계 3" class="crop-image">
+                            <img src="images/Coffee_Stage_4.png" alt="커피 단계 4" class="crop-image">
+                            <img src="images/Coffee_Stage_5.png" alt="커피 단계 5" class="crop-image">
+
+                        </td>
+                        <td><img src="images/Coffee_Stage_6.png" alt="커피 수확" class="crop-image">
+                        <img src="images/Coffee_Stage_7.png"><br>재성장:2일</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/a/a6/Traveling_Cart_Icon.png">여행카트:2500g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e9/Coffee.png/24px-Coffee.png">커피
+                            </td>
+                        <td>10일</td>
+                    </tr>
+                    <tr>
+                        <td>케일</td>
+                        <td><img src="images/Kale_Seeds.png" alt="케일 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="images/Kale_Stage_1.png" alt="케일 단계 1" class="crop-image">
+                            <img src="images/Kale_Stage_2.png" alt="케일 단계 2" class="crop-image">
+                            <img src="images/Kale_Stage_3.png" alt="케일 단계 3" class="crop-image">
+                            <img src="images/Kale_Stage_4.png" alt="케일 단계 4" class="crop-image">
+
+                        </td>
+                        <td><img src="images/Kale_Stage_5.png" alt="케일 수확" class="crop-image"></td>
+                        <td>70g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8b/Salmon_Dinner.png/24px-Salmon_Dinner.png">연어 정찬<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/ed/Stir_Fry.png/24px-Stir_Fry.png">야채 볶음</td>
+                        <td>6일</td>
+                    </tr>
+                    <tr>
+                        <td>콜리플라워</td>
+                        <td><img src="images/Cauliflower_Seeds.png" alt="콜리플라워 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="images/Cauliflower_Stage_1.png" alt="콜리플라워 단계 1" class="crop-image">
+                            <img src="images/Cauliflower_Stage_2.png" alt="콜리플라워 단계 2" class="crop-image">
+                            <img src="images/Cauliflower_Stage_3.png" alt="콜리플라워 단계 3" class="crop-image">
+                            <img src="images/Cauliflower_Stage_4.png" alt="콜리플라워 단계 4" class="crop-image">
+                            <img src="images/Cauliflower_Stage_5.png" alt="콜리플라워 단계 5" class="crop-image">
+                        </td>
+                        <td><img src="images/Cauliflower_Stage_6.png" alt="콜리플라워 수확" class="crop-image"></td>
+                        <td>80g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/6e/Cheese_Cauliflower.png/24px-Cheese_Cauliflower.png">치즈 콜리플라워<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b3/Bundle_Green.png/24px-Bundle_Green.png">봄 작물 꾸러미<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Quests_Icon.png">"조디의 부탁" 퀘스트<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/23/Maru_Icon.png">마루 (좋아하는 선물)</td>
+                        <td>12일</td>
+                    </tr>
+                    <tr>
+                        <td>튤립</td>
+                        <td><img src="images/Tulip_Bulb.png" alt="튤립 구근" class="crop-image"></td>
+                        <td>
+                            <img src="images/Tulip_Stage_1.png" alt="튤립 단계 1" class="crop-image">
+                            <img src="images/Tulip_Stage_2.png" alt="튤립 단계 2" class="crop-image">
+                            <img src="images/Tulip_Stage_3.png" alt="튤립 단계 3" class="crop-image">
+                            <img src="images/Tulip_Stage_4.png" alt="튤립 단계 4" class="crop-image">
+
+                        </td>
+                        <td><img src="images/Tulip_Stage_6.png" alt="튤립 수확" class="crop-image"></td>
+                        <td>20g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/5/54/Evelyn_Icon.png">에블린 (좋아하는 선물)</td>
+                        <td>6일</td>
+                    </tr>
+                    <tr>
+                        <td>푸른 재즈</td>
+                        <td><img src="images/Jazz_Seeds.png" alt="재즈 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="images/Blue_Jazz_Stage_1.png" alt="재즈 단계 1" class="crop-image">
+                            <img src="images/Blue_Jazz_Stage_2.png" alt="재즈 단계 2" class="crop-image">
+                            <img src="images/Blue_Jazz_Stage_3.png" alt="재즈 단계 3" class="crop-image">
+                            <img src="images/Blue_Jazz_Stage_4.png" alt="재즈 단계 4" class="crop-image">
+
+                        </td>
+                        <td><img src="images/Blue_Jazz_Stage_5.png" alt="재즈 수확" class="crop-image"></td>
+                        <td>30g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/5/5d/Lucky_Lunch.png/24px-Lucky_Lunch.png">행운의 점심</td>
+                        <td>6일</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+        <!--  -->
+    </div>
+    <div class="container">
+        <div class="season" id="spring">
+            <h2>여름 작물</h2>
+            <table class="crop-table">
+                <thead>
+                    <tr>
+                        <th>작물 이름</th>
+                        <th>씨앗</th>
+                        <th>단계별 성장</th>
+                        <th>수확 상태</th>
+                        <th><img src = "img/Gold.png">씨앗 가격</th>
+                        <th>사용처</th>
+                        <th>다 자라는데 걸리는 시간</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>매운 고추</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/6/67/Pepper_Seeds.png" alt="고추 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/18/Hot_Pepper_Stage_1.png" alt="고추 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/13/Hot_Pepper_Stage_2.png" alt="고추 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/8a/Hot_Pepper_Stage_3.png" alt="고추 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/85/Hot_Pepper_Stage_4.png" alt="고추 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/af/Hot_Pepper_Stage_4b.png" alt="고추 단계 5" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/9/96/Hot_Pepper_Stage_5.png" alt="고추 수확" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/79/Hot_Pepper_Stage_6.png"><br>재성장:3일</td>
+                        <td>40g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/0/08/Pepper_Poppers.png/24px-Pepper_Poppers.png">페퍼 파퍼<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/f2/Spicy_Eel.png/24px-Spicy_Eel.png">매콤한 장어<br>
+                            <img src ="https://stardewvalleywiki.com/mediawiki/images/thumb/2/2b/Bundle_Yellow.png/24px-Bundle_Yellow.png">여름 작물 꾸러미<br>
+                            <img src ="https://stardewvalleywiki.com/mediawiki/images/c/c2/Quests_Icon.png">"무릎 치료"퀘스트<br>
+                            <img src ="https://stardewvalleywiki.com/mediawiki/images/b/b6/Lewis_Icon.png">루이스 (좋아하는 선물)<br>
+                            <img src ="https://stardewvalleywiki.com/mediawiki/images/b/b4/Shane_Icon.png">셰인 (좋아하는 선물)</td>
+                        <td>5일</td>
+                    </tr>
+                    <tr>
+                        <td>멜론</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Melon_Seeds.png" alt="멜론 새싹" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/80/Melon_Stage_1.png" alt="멜론 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/36/Melon_Stage_2.png" alt="멜론 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/aa/Melon_Stage_3.png" alt="멜론 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/cf/Melon_Stage_4.png" alt="멜론 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/6d/Melon_Stage_5.png" alt="멜론 단계 5" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/d/d9/Melon_Stage_6.png" alt="멜론 수확" class="crop-image"></td>
+                        <td>80g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/9e/Fruit_Salad.png/24px-Fruit_Salad.png">과일 샐러드<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/3/32/Pink_Cake.png/24px-Pink_Cake.png">핑크 케이크<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/2b/Bundle_Yellow.png/24px-Bundle_Yellow.png">여름 작물 꾸러미<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/ce/Bundle_Teal.png/24px-Bundle_Teal.png">고품질 작물 꾸러미<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Quests_Icon.png">"작물 연구"퀘스트<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/bc/Penny_Icon.png">페니 (좋아하는 선물)</td>
+                        <td>12일</td>
+                    </tr>
+                    <tr>
+                        <td>무</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/b/b1/Radish_Seeds.png" alt="무 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b7/Radish_Stage_1.png" alt="무 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/ce/Radish_Stage_2.png" alt="무 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/16/Radish_Stage_3.png" alt="무 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/55/Radish_Stage_4.png" alt="무 단계 4" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/e/ec/Radish_Stage_5.png" alt="무 수확" class="crop-image"></td>
+                        <td>40g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b9/Radish_Salad.png/24px-Radish_Salad.png">무 샐러드<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/45/Red_Plate.png/24px-Red_Plate.png">붉은 정식</td>
+                        <td>6일</td>
+                    </tr>
+                    <tr>
+                        <td>밀</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/2/2b/Wheat_Seeds.png" alt="밀 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/f9/Wheat_Stage_1.png" alt="밀 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/4/4b/Wheat_Stage_2.png" alt="밀 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/34/Wheat_Stage_3.png" alt="밀 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/64/Wheat_Stage_4.png" alt="밀 단계 4" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/f/f5/Wheat_Stage_5.png" alt="밀 수확" class="crop-image"></td>
+                        <td>10g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b3/Beer.png/24px-Beer.png">맥주<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/2c/Wheat_Flour.png/24px-Wheat_Flour.png">밀가루<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/2b/Bundle_Yellow.png/24px-Bundle_Yellow.png">사료 꾸러미</td>
+                        <td>4일</td>
+                    </tr>
+                    <tr>
+                        <td>붉은 양배추<br>2년차 부터 재배가능</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/e/ec/Red_Cabbage_Seeds.png" alt="붉은 양배추 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/df/Red_Cabbage_Stage_1.png" alt="붉은 양배추 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/8d/Red_Cabbage_Stage_2.png" alt="붉은 양배추 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/3d/Red_Cabbage_Stage_3.png" alt="붉은 양배추 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b9/Red_Cabbage_Stage_4.png" alt="붉은 양배추 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/0d/Red_Cabbage_Stage_5.png" alt="붉은 양배추 단계 5" class="crop-image">
+
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/8/8a/Red_Cabbage_Stage_6.png" alt="붉은 양배추 수확" class="crop-image"></td>
+                        <td>100g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e1/Coleslaw.png/24px-Coleslaw.png">코울슬로<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/d/d5/Fish_Taco.png/24px-Fish_Taco.png">생선 타코<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/45/Red_Plate.png/24px-Red_Plate.png">붉은 정식<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/ce/Bundle_Teal.png/24px-Bundle_Teal.png">염료 꾸러미
+                            </td>
+                        <td>9일</td>
+                    </tr>
+                    <tr>
+                        <td>블루베리</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/8/81/Blueberry_Seeds.png" alt="블루베리 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/2c/Blueberry_Stage_1.png" alt="블루베리 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/32/Blueberry_Stage_2.png" alt="블루베리 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/54/Blueberry_Stage_3.png" alt="블루베리 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b1/Blueberry_Stage_4.png" alt="블루베리 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/69/Blueberry_Stage_5.png" alt="블루베리 단계 5" class="crop-image">
+
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/8/84/Blueberry_Stage_6.png" alt="블루베리 수확" class="crop-image">
+                        <img src="https://stardewvalleywiki.com/mediawiki/images/1/19/Blueberry_Stage_7.png"><br>재성장:4일</td>
+                        <td>80g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/9b/Blueberry_Tart.png/24px-Blueberry_Tart.png">블루베리 타르트<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/9e/Fruit_Salad.png/24px-Fruit_Salad.png">과일 샐러드<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/2b/Bundle_Yellow.png/24px-Bundle_Yellow.png">여름 작물 꾸러미
+                            </td>
+                        <td>13일</td>
+                    </tr>
+                    <tr>
+                        <td>스타프루트</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/e/e0/Starfruit_Seeds.png" alt="스타프루트 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/cf/Starfruit_Stage_1.png" alt="스타프루트 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/03/Starfruit_Stage_2.png" alt="스타프루트 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c1/Starfruit_Stage_3.png" alt="스타프루트 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/bf/Starfruit_Stage_4.png" alt="스타프루트 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/f6/Starfruit_Stage_5.png" alt="스타프루트 단계 5" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/c/c4/Starfruit_Stage_6.png" alt="스타프루트 수확" class="crop-image"></td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/7/7d/Sandy_Icon.png">오아시스:400g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/73/Junimo_Hut.png/24px-Junimo_Hut.png">주니모 오두막<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Quests_Icon.png">"병사의 별"퀘스트
+                            </td>
+                        <td>13일</td>
+                    </tr>
+                    <tr>
+                        <td>양귀비</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/a/a2/Poppy_Seeds.png" alt="양귀비 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/25/Poppy_Stage_1.png" alt="양귀비 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/a9/Poppy_Stage_2.png" alt="양귀비 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/96/Poppy_Stage_3.png" alt="양귀비 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/67/Poppy_Stage_4.png" alt="양귀비 단계 4" class="crop-image">
+
+
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/e/ee/Poppy_Stage_6.png" alt="양귀비 수확" class="crop-image">
+
+                        <td>100g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8e/Poppyseed_Muffin.png/24px-Poppyseed_Muffin.png">양귀비씨 머핀<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/3/3f/Bundle_Red.png/24px-Bundle_Red.png">요리사 꾸러미<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/bc/Penny_Icon.png">페니 (좋아하는 선물)
+                            </td>
+                        <td>7일</td>
+                    </tr>
+                    <tr>
+                        <td>여름별꽃</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/8/85/Spangle_Seeds.png" alt="여름별꽃" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/32/Summer_Spangle_Stage_1.png" alt="여름별꽃 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/eb/Summer_Spangle_Stage_2.png" alt="여름별꽃 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/79/Summer_Spangle_Stage_3.png" alt="여름별꽃 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/7a/Summer_Spangle_Stage_4.png" alt="여름별꽃 단계 4" class="crop-image">
+
+
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/0/06/Summer_Spangle_Stage_5.png" alt="여름별꽃 수확" class="crop-image"></td>
+                        <td>50g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/d/d4/Caroline_Icon.png">캐롤라인 (좋아하는 선물)
+                            </td>
+                        <td>8일</td>
+                    </tr>
+                    <tr>
+                        <td>여름호박</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/f/fd/Summer_Squash_Seeds.png" alt="여름호박 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/76/Summer_Squash_Stage_1.png" alt="여름호박 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/7c/Summer_Squash_Stage_2.png" alt="여름호박 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/e1/Summer_Squash_Stage_3.png" alt="여름호박 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/16/Summer_Squash_Stage_4.png" alt="여름호박 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c3/Summer_Squash_Stage_5.png" alt="여름호박 단계 5" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/2/28/Summer_Squash_Stage_6.png" alt="여름호박 수확" class="crop-image"></td>
+                        <td>너구리 상점에서 교환가능</td>
+                        <td>X</td>
+                        <td>6일</td>
+                    </tr>
+                    <tr>
+                        <td>옥수수<br>가을에도 심을 수 있습니다</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/d/d1/Corn_Seeds.png" alt="옥수수 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/57/Corn_Stage_1.png" alt="옥수수 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/97/Corn_Stage_2.png" alt="옥수수 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Corn_Stage_3.png" alt="옥수수 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/11/Corn_Stage_4.png" alt="옥수수 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/4/4d/Corn_Stage_5.png" alt="옥수수 단계 5" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/9/9d/Corn_Stage_6.png" alt="옥수수 수확" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/29/Corn_Stage_7.png"><br>재성장:4일</td>
+                        <td>150g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/d/d7/Tortilla.png/24px-Tortilla.png">또띠아<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/0/06/Oil.png/24px-Oil.png">기름<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/95/Bundle_Orange.png/24px-Bundle_Orange.png">가을 작물 꾸러미<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/ce/Bundle_Teal.png/24px-Bundle_Teal.png">고품질 작물 꾸러미</td>
+                        <td>12일</td>
+                    </tr>
+                    <tr>
+                        <td>토마토</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/e/e3/Tomato_Seeds.png" alt="토마토 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/1f/Tomato_Stage_1.png" alt="토마토 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/7d/Tomato_Stage_2.png" alt="토마토 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/e7/Tomato_Stage_3.png" alt="토마토 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/6d/Tomato_Stage_4.png" alt="토마토 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Tomato_Stage_5.png" alt="토마토 단계 5" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/b/bb/Tomato_Stage_6.png" alt="토마토 수확" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/56/Tomato_Stage_7.png"><br>재성장:4일</td>
+                        <td>50g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/ca/Bruschetta.png/24px-Bruschetta.png">브루쉐타<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/73/Eggplant_Parmesan.png/24px-Eggplant_Parmesan.png">가지 파마산<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/6f/Fish_Stew.png/24px-Fish_Stew.png">생선 스튜<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/f4/Pizza.png/24px-Pizza.png">피자<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/0/08/Spaghetti.png/24px-Spaghetti.png">스파게티<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/0/0a/Vegetable_Medley.png/24px-Vegetable_Medley.png">야채의 메들리<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/2b/Bundle_Yellow.png/24px-Bundle_Yellow.png">여름 작물 꾸러미</td>
+                        <td>11일</td>
+                    </tr>
+                    <tr>
+                        <td>해바라기<br>가을에도 심을 수 있습니다</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/1/1f/Sunflower_Seeds.png" alt="해바라기 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/21/Sunflower_Stage_1.png" alt="해바라기 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/08/Sunflower_Stage_2.png" alt="해바라기 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/4/49/Sunflower_Stage_3.png" alt="해바라기 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/30/Sunflower_Stage_4.png" alt="해바라기 단계 4" class="crop-image">
+
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/e/ed/Sunflower_Stage_5.png" alt="해바라기 수확" class="crop-image"></td>
+                        <td>200g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/0/06/Oil.png/24px-Oil.png">기름<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/ce/Bundle_Teal.png/24px-Bundle_Teal.png">염료 꾸러미<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/f7/Haley_Icon.png">헤일리 (좋아하는 선물)</td>
+                        <td>8일</td>
+                    </tr>
+                    <tr>
+                        <td>홉</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/9/9b/Hops_Starter.png" alt="홉 종자" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/32/Hops_Stage_1.png" alt="홉 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5a/Hops_Stage_3.png" alt="홉 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/e4/Hops_Stage_4.png" alt="홉 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/ff/Hops_Stage_5.png" alt="홉 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/0d/Hops_Stage_6.png" alt="홉 단계 5" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/f/fe/Hops_Stage_7.png" alt="홉 수확" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b0/Hops_Stage_8.png"><br>재성장:매일</td>
+                        <td>60g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/78/Pale_Ale.png/24px-Pale_Ale.png">페일 에일</td>
+                        <td>11일</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+    </div>
+    <div class="container">
+        <div class="season" id="spring">
+            <h2>가을 작물</h2>
+            <table class="crop-table">
+                <thead>
+                    <tr>
+                        <th>작물 이름</th>
+                        <th>씨앗</th>
+                        <th>단계별 성장</th>
+                        <th>수확 상태</th>
+                        <th><img src = "img/Gold.png">씨앗 가격</th>
+                        <th>사용처</th>
+                        <th>다 자라는데 걸리는 시간</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>가지</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/f/f9/Eggplant_Seeds.png" alt="가지 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/97/Eggplant_Stage_1.png" alt="가지 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/ca/Eggplant_Stage_2.png" alt="가지 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d6/Eggplant_Stage_3.png" alt="가지 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/a1/Eggplant_Stage_4.png" alt="가지 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/01/Eggplant_Stage_5.png" alt="가지 단계 5" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/1/17/Eggplant_Stage_6.png" alt="가지 수확" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/55/Eggplant_Stage_7.png" alt="가지 수확" class="crop-image"><br>재성장:5일</td>
+                        <td>20g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/73/Eggplant_Parmesan.png/24px-Eggplant_Parmesan.png">가지 파마산<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/87/Survival_Burger.png/24px-Survival_Burger.png">생존형 버거<br>
+                            <img src ="https://stardewvalleywiki.com/mediawiki/images/thumb/9/95/Bundle_Orange.png/24px-Bundle_Orange.png">가을 작물 꾸러미</td>
+                        <td>5일</td>
+                    </tr>
+                    <tr>
+                        <td>브로콜리</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/9/97/Broccoli_Seeds.png" alt="브로콜리 새싹" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/4/4d/Broccoli_Stage_1.png" alt="브로콜리 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/f3/Broccoli_Stage_2.png" alt="브로콜리 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/cf/Broccoli_Stage_3.png" alt="브로콜리 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b1/Broccoli_Stage_4.png" alt="브로콜리 단계 4" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/2/2d/Broccoli_Stage_5.png" alt="브로콜리 수확" class="crop-image"></td>
+                        <td>너구리 상점에서 교환가능</td>
+                        <td>X</td>
+                        <td>8일</td>
+                    </tr>
+                    <tr>
+                        <td>사탕무</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/a/a8/Beet_Seeds.png" alt="사탕무 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/30/Beet_Stage_1.png" alt="사탕무 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/6a/Beet_Stage_2.png" alt="사탕무 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/1a/Beet_Stage_3.png" alt="사탕무 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/54/Beet_Stage_4.png" alt="사탕무 단계 4" class="crop-image">
+
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/7/7c/Beet_Stage_5.png" alt="사탕무 수확" class="crop-image"></td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/7/7d/Sandy_Icon.png">오아시스:20g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/0/0a/Vegetable_Medley.png/24px-Vegetable_Medley.png">야채의 메들리<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/a9/Sugar.png/24px-Sugar.png">설탕<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Quests_Icon.png">"불가사의한 치"퀘스트<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/54/Evelyn_Icon.png">에블린 (좋아하는 선물)</td>
+                        <td>6일</td>
+                    </tr>
+                    <tr>
+                        <td>아마란스</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/c/ca/Amaranth_Seeds.png" alt="아마란스 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9d/Amaranth_Stage_1.png" alt="아마란스 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/73/Amaranth_Stage_2.png" alt="아마란스 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/ec/Amaranth_Stage_3.png" alt="아마란스 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/4/41/Amaranth_Stage_4.png" alt="아마란스 단계 4" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/7/74/Amaranth_Stage_5.png" alt="아마란스 수확" class="crop-image"></td>
+                        <td>70g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8b/Salmon_Dinner.png/24px-Salmon_Dinner.png">연어 정찬<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Quests_Icon.png">"소의 기쁨"퀘스트</td>
+                        <td>7일</td>
+                    </tr>
+                    <tr>
+                        <td>아티초크</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/7/71/Artichoke_Seeds.png" alt="아티초크 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b0/Artichoke_Stage_1.png" alt="아티초크 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/0a/Artichoke_Stage_2.png" alt="아티초크 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/29/Artichoke_Stage_3.png" alt="아티초크 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/2b/Artichoke_Stage_4.png" alt="아티초크 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d4/Artichoke_Stage_5.png" alt="아티초크 단계 5" class="crop-image">
+
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/0/0b/Artichoke_Stage_6.png" alt="아티초크 수확" class="crop-image"></td>
+                        <td>30g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/77/Artichoke_Dip.png/24px-Artichoke_Dip.png">아티초크 소스<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/d/d2/Super_Meal.png/24px-Super_Meal.png">슈퍼 건강식
+                            </td>
+                        <td>8일</td>
+                    </tr>
+                    <tr>
+                        <td>요정장미</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/8/8e/Fairy_Seeds.png" alt="요정장미 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/52/Fairy_Rose_Stage_1.png" alt="요정장미 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/05/Fairy_Rose_Stage_2.png" alt="요정장미 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/09/Fairy_Rose_Stage_3.png" alt="요정장미 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d4/Fairy_Rose_Stage_4.png" alt="요정장미 단계 4" class="crop-image">
+
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/4/43/Fairy_Rose_Stage_5.png" alt="요정장미 수확" class="crop-image"></td>
+                        <td>200g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/5/54/Evelyn_Icon.png">에블린(좋아하는 선물)<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/68/Jas_Icon.png">재스(좋아하는 선물)
+                            </td>
+                        <td>12일</td>
+                    </tr>
+                    <tr>
+                        <td>참마</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/e/e9/Yam_Seeds.png" alt="참마 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d4/Yam_Stage_1.png" alt="참마 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5c/Yam_Stage_2.png" alt="참마 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c7/Yam_Stage_3.png" alt="참마 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9d/Yam_Stage_4.png" alt="참마 단계 4" class="crop-image">
+
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/6/64/Yam_Stage_5.png" alt="참마 수확" class="crop-image"></td>
+                        <td>60g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/f4/Autumn%27s_Bounty.png/24px-Autumn%27s_Bounty.png">가을의 수확<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/3/30/Glazed_Yams.png/24px-Glazed_Yams.png">맛탕<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/95/Bundle_Orange.png/24px-Bundle_Orange.png">가을 작물 꾸러미<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Linus_Icon.png">라이너스 (좋아하는 선물)
+                            </td>
+                        <td>10일</td>
+                    </tr>
+                    <tr>
+                        <td>청경채</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/2/21/Bok_Choy_Seeds.png" alt="청경채 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/3d/Bok_Choy_Stage_1.png" alt="청경채 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/00/Bok_Choy_Stage_2.png" alt="청경채 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/88/Bok_Choy_Stage_3.png" alt="청경채 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c7/Bok_Choy_Stage_4.png" alt="청경채 단계 4" class="crop-image">
+
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/5/50/Bok_Choy_Stage_5.png" alt="청경채 수확" class="crop-image"></td>
+                        <td>50g</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/d/d2/Super_Meal.png/24px-Super_Meal.png">슈퍼 건강식
+                            </td>
+                        <td>4일</td>
+                    </tr>
+                    <tr>
+                        <td>크랜베리</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/e/ec/Cranberry_Seeds.png" alt="크랜베리" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/ae/Cranberry_Stage_1.png" alt="크랜베리 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b8/Cranberry_Stage_2.png" alt="크랜베리 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/16/Cranberry_Stage_3.png" alt="크랜베리 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/57/Cranberry_Stage_4.png" alt="크랜베리 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c3/Cranberry_Stage_5.png" alt="크랜베리 단계 5" class="crop-image">
+
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/5/5a/Cranberry_Stage_6.png" alt="크랜베리 수확" class="crop-image">
+                        <img src="https://stardewvalleywiki.com/mediawiki/images/a/ac/Cranberry_Stage_7.png"><br>재성장:5일</td>
+                        <td>240g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/9d/Cranberry_Candy.png/24px-Cranberry_Candy.png">크랜베리 캔디<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/0/0b/Cranberry_Sauce.png/24px-Cranberry_Sauce.png">크랜베리 소스<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/9a/Stuffing.png/24px-Stuffing.png">요리용 속<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/d/d2/Super_Meal.png/24px-Super_Meal.png">슈퍼 건강식
+                            </td>
+                        <td>7일</td>
+                    </tr>
+                    <tr>
+                        <td>포도</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/d/de/Grape_Starter.png" alt="포도 종자" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/be/Grape_Stage_1.png" alt="포도 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9f/Grape_Stage_2.png" alt="포도 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/fa/Grape_Stage_3.png" alt="포도 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/e7/Grape_Stage_4.png" alt="포도 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/ea/Grape_Stage_5.png" alt="포도 단계 5" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/1/12/Grape_Stage_6.png" alt="포도 수확" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/54/Grape_Stage_7.png"><br>재성장:3일</td>
+                        <td>60g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/c4/Summer_Seeds.png/24px-Summer_Seeds.png">여름 씨앗 모음<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/2b/Bundle_Yellow.png/24px-Bundle_Yellow.png">여름 채집 꾸러미<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/0b/Vincent_Icon.png">빈센트 (좋아하는 선물)</td>
+                        <td>10일</td>
+                    </tr>
+                    <tr>
+                        <td>호박</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/9/99/Pumpkin_Seeds.png" alt="호박 씨앗" class="crop-image"></td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/09/Pumpkin_Stage_1.png" alt="호박 단계 1" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/1b/Pumpkin_Stage_2.png" alt="호박 단계 2" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/cf/Pumpkin_Stage_3.png" alt="호박 단계 3" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/ab/Pumpkin_Stage_4.png" alt="호박 단계 4" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/dd/Pumpkin_Stage_5.png" alt="호박 단계 5" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/9/9d/Pumpkin_Stage_6.png" alt="호박 수확" class="crop-image"></td>
+                        <td>100g</td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/f4/Autumn%27s_Bounty.png/24px-Autumn%27s_Bounty.png">가을의 수확<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/7d/Pumpkin_Pie.png/24px-Pumpkin_Pie.png">호박 파이<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/5/59/Pumpkin_Soup.png/24px-Pumpkin_Soup.png">호박죽<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/17/Jack-O-Lantern.png/24px-Jack-O-Lantern.png">호박등<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/95/Bundle_Orange.png/24px-Bundle_Orange.png">가을 작물 꾸러미<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/ce/Bundle_Teal.png/24px-Bundle_Teal.png">고품질 작물 꾸러미<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Quests_Icon.png">"호박 조각하기" 퀘스트<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/63/Abigail_Icon.png">에비게일 (좋아하는 선물)<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/10/Krobus_Icon.png">크로버스 (좋아하는 선물)<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/73/Willy_Icon.png">윌리 (좋아하는 선물)</td>
+                        <td>13일</td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <div class="container">
+            <div class="season" id="spring">
+                <h2>겨울 작물</h2>
+                <table class="crop-table">
+                    <thead>
+                        <tr>
+                            <th>작물 이름</th>
+                            <th>씨앗</th>
+                            <th>단계별 성장</th>
+                            <th>수확 상태</th>
+                            <th><img src = "img/Gold.png">씨앗 가격</th>
+                            <th>사용처</th>
+                            <th>다 자라는데 걸리는 시간</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>파우더멜론</td>
+                            <td><img src="https://stardewvalleywiki.com/mediawiki/images/d/de/Powdermelon_Seeds.png" alt="파우더멜론 씨앗" class="crop-image"></td>
+                            <td>
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/6/6f/Powdermelon_Stage_1.png" alt="파우더멜론 단계 1" class="crop-image">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/c/c7/Powdermelon_Stage_2.png" alt="파우더멜론 단계 2" class="crop-image">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/d/d7/Powdermelon_Stage_3.png" alt="파우더멜론 단계 3" class="crop-image">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/0/0d/Powdermelon_Stage_4.png" alt="파우더멜론 단계 4" class="crop-image">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Powdermelon_Stage_5.png" alt="파우더멜론 단계 5" class="crop-image">
+                            </td>
+                            <td><img src="https://stardewvalleywiki.com/mediawiki/images/f/fd/Powdermelon_Stage_6.png" alt="파우더멜론 수확" class="crop-image"></td>
+                            <td>너구리 상점에서 교환가능</td>
+                            <td>X</td>
+                            <td>7일</td>
+                        </tr>
+        
+        </div>    
+        </div>
+    </div>
+
+</body>
+</html>

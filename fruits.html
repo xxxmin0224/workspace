@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet">
+    <title>과일나무 - 스타듀밸리</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('img/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .season {
+            margin-bottom: 40px;
+        }
+
+        .season h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .crop-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .crop-table th, .crop-table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .crop-table th {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .crop-table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .crop-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .crop-table td {
+            color: #fff;
+        }
+
+        .crop-image {
+            
+            
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+    </style>
+</head>
+<body>
+    <h1>계절별 작물 - 스타듀밸리</h1>
+    <div class="main-container">
+        <aside class="side-bar">
+          <section class="side-bar__icon-box">
+            <section class="side-bar__icon-1">
+              <div></div>
+              <div></div>
+              <div></div>
+            </section>
+          </section>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-cat"></i> 작물 </a>
+              <ul>
+                <li><a href="crops.html">계절별 작물</a></li>
+                <li><a href="fruits.html">과일 나무</a></li>
+    
+              </ul>
+            </li>
+            <li>
+              <a href="#">동물</a>
+              <ul>
+                <li><a href="#">반려동물</a></li>
+                <li><a href="#">가축</a></li>
+                <li><a href="#">말</a></li>
+                <li><a href="#">동물생산품</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">스킬</a>
+              <ul>
+                <li><a href="#">농사</a></li>
+                <li><a href="#">채광</a></li>
+                <li><a href="#">낚시</a></li>
+                <li><a href="#">전투</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">게임플레이</a>
+              <ul>
+                <li><a href="#">호감도</a></li>
+                <li><a href="#">결혼과 자녀</a></li>
+                <li><a href="#">퀘스트</a></li>
+                <li><a href="#">꾸러미</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+    <div class="container">
+        <div class="season" id="spring">
+            <h2>봄 수확 나무</h2>
+            <table class="crop-table">
+                <thead>
+                    <tr>
+                        <th>과일나무</th>
+                        <th>단계별 성장</th>
+                        <th>계절별 모습- 봄, 여름, 가을, 겨울</th>
+                        <th>수확</th>
+                        <th><img src = "img/Gold.png">묘목 가격</th>
+                        <th>사용처</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/fc/Apricot.png/24px-Apricot.png">살구나무</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/87/Apricot_Stage_1.png" alt="살구나무 묘목1단계" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/e7/Apricot_Stage_2.png" alt="살구나무 묘목2단계" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/cc/Apricot_Stage_3.png" alt="살구나무 묘목3단계" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/95/Apricot_Stage_4.png" alt="살구나무 묘목4단계" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/5/51/Apricot_Stage_5.png" alt="살구나무 묘목5단계" class="crop-image"></td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/3/3f/Apricot_Stage_5_Fruit.png" alt="살구나무수확" class="crop-image"></td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/9/9d/Apricot_Sapling.png" alt="살구나무 묘목" class="crop-image">2,000g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/a6/Traveling_Cart_Icon.png">여행카트:1,500~2,500g</td>
+                        
+                        
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/a1/Bundle_Purple.png/24px-Bundle_Purple.png">장인 꾸러미<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/9e/Fruit_Salad.png/24px-Fruit_Salad.png">과일 샐러드<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/c2/Quests_Icon.png/28px-Quests_Icon.png">신선한 과일 퀘스트<br></td>
+
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/20/Cherry.png/24px-Cherry.png">체리나무</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/23/Cherry_Stage_1.png" alt="체리나무 묘목1단계" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/14/Cherry_Stage_2.png" alt="체리나무 묘목2단계" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/84/Cherry_Stage_3.png" alt="체리나무 묘목3단계" class="crop-image">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/7f/Cherry_Stage_4.png" alt="체리나무 묘목4단계" class="crop-image">
+                        </td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/2/2d/Cherry_Stage_5.png" alt="체리나무 묘목5단계" class="crop-image"></td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/b/b3/Cherry_Stage_5_Fruit.png" alt="체리나무수확" class="crop-image"></td>
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/2/22/Cherry_Sapling.png" alt="체리나무 묘목" class="crop-image">3,400g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/a6/Traveling_Cart_Icon.png">여행카트:2,550~4,250g</td>
+                        
+                        
+                        <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/a1/Bundle_Purple.png/24px-Bundle_Purple.png">장인 꾸러미<br></td>
+
+                    </tr>
+                    </tbody>
+                    </table>
+                    
+            </div>
+        </div>
+
+                    
+
+                <div class="container">
+                    <div class="season" id="summer">
+                        <h2>여름 수확 나무</h2>
+                        <table class="crop-table">
+                            <thead>
+                                <tr>
+                                    <th>과일나무</th>
+                                    <th>단계별 성장</th>
+                                    <th>계절별 모습- 봄, 여름, 가을, 겨울</th>
+                                    <th>수확</th>
+                                    <th><img src = "img/Gold.png">묘목 가격</th>
+                                    <th>사용처</th>
+            
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/3/38/Mango.png/24px-Mango.png">망고나무</td>
+                                    <td>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/f/fd/Mango_Stage_1.png" alt="망고나무 묘목1단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/a/a6/Mango_Stage_2.png" alt="망고나무 묘목2단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/4/44/Mango_Stage_3.png" alt="망고나무 묘목3단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/b/b5/Mango_Stage_4.png" alt="망고나무 묘목4단계" class="crop-image">
+                                    </td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/d/d8/Mango_Stage_5.png" alt="망고나무 묘목5단계" class="crop-image"></td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/5/56/Mango_Stage_5_Fruit.png" alt="망고나무수확" class="crop-image"></td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/b/b0/Mango_Sapling.png" alt="망고나무 묘목" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/3/32/Island_Trader_Icon.png/24px-Island_Trader_Icon.png">
+                                        섬 상인:<img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/aa/Mussel.png/24px-Mussel.png">홍합 75개</td>
+                                    
+                                    
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/3/3d/Leo_Icon.png">레오 (사랑하는 선물)<br>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/6e/Mango_Sticky_Rice.png/24px-Mango_Sticky_Rice.png">카오 니야우 마무앙
+                                    </td>
+            
+                                </tr>
+            
+                                <tr>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/69/Banana.png/24px-Banana.png">바나나나무</td>
+                                    <td>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/9/9e/Banana_Stage_1.png" alt="바나나나무 묘목1단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/1/14/Banana_Stage_2.png" alt="바나나나무 묘목2단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/2/2f/Banana_Stage_3.png" alt="바나나나무 묘목3단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/d/d8/Banana_Stage_4.png" alt="바나나나무 묘목4단계" class="crop-image">
+                                    </td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/2/2c/Banana_Stage_5.png" alt="바나나나무 묘목5단계" class="crop-image"></td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/3/3b/Banana_Stage_5_Fruit.png" alt="바나나나무수확" class="crop-image"></td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/6/69/Banana_Sapling.png" alt="바나나나무 묘목" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/3/32/Island_Trader_Icon.png/24px-Island_Trader_Icon.png">섬 상인:
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/87/Dragon_Tooth.png/24px-Dragon_Tooth.png">용의 이빨 5개
+                                    </td>
+                                    
+                                    
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/40/Banana_Pudding.png/24px-Banana_Pudding.png">바나나 푸딩<br></td>
+            
+                                </tr>
+                                <tr>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e2/Peach.png/24px-Peach.png">복숭아나무</td>
+                                    <td>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/b/b1/Peach_Stage_1.png" alt="복숭아나무 묘목1단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/7/77/Peach_Stage_2.png" alt="복숭아나무 묘목2단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/d/d5/Peach_Stage_3.png" alt="복숭아나무 묘목3단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/d/dd/Peach_Stage_4.png" alt="복숭아나무 묘목4단계" class="crop-image">
+                                    </td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/a/a4/Peach_Stage_5.png" alt="복숭아나무 묘목5단계" class="crop-image"></td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/5/59/Peach_Stage_5_Fruit.png" alt="복숭아나무수확" class="crop-image"></td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/e/e3/Peach_Sapling.png" alt="복숭아나무 묘목" class="crop-image">6,000g<br>
+                                    <img src="https://stardewvalleywiki.com/mediawiki/images/a/a6/Traveling_Cart_Icon.png">여행카트:4,500~7,500g
+                                    </td>
+                                    
+                                    
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/a1/Bundle_Purple.png/24px-Bundle_Purple.png">장인 꾸러미<br>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/d/d1/Robin_Icon.png">로빈 (사랑하는 선물)</td>
+            
+                                </tr>
+                                <tr>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/43/Orange.png/24px-Orange.png">오렌지나무</td>
+                                    <td>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/7/79/Orange_Stage_1.png" alt="오렌지나무 묘목1단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/e/e6/Orange_Stage_2.png" alt="오렌지나무 묘목2단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/1/17/Orange_Stage_3.png" alt="오렌지나무 묘목3단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/0/03/Orange_Stage_4.png" alt="오렌지나무 묘목4단계" class="crop-image">
+                                    </td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Orange_Stage_5.png" alt="오렌지나무 묘목5단계" class="crop-image"></td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/b/b8/Orange_Stage_5_Fruit.png" alt="오렌지나무수확" class="crop-image"></td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/0/08/Orange_Sapling.png" alt="오렌지나무 묘목" class="crop-image">4,000g<br>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/a/a6/Traveling_Cart_Icon.png">여행카트:3,000~5,000g
+                                    </td>
+                                    
+                                    
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/a1/Bundle_Purple.png/24px-Bundle_Purple.png">장인 꾸러미<br>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Gus_Icon.png">거스 (사랑하는 선물)</td>
+            
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="season" id="spring">
+                        <h2>가을 수확 나무</h2>
+                        <table class="crop-table">
+                            <thead>
+                                <tr>
+                                    <th>과일나무</th>
+                                    <th>단계별 성장</th>
+                                    <th>계절별 모습- 봄, 여름, 가을, 겨울</th>
+                                    <th>수확</th>
+                                    <th><img src = "img/Gold.png">묘목 가격</th>
+                                    <th>사용처</th>
+            
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/7d/Apple.png/24px-Apple.png">사과나무</td>
+                                    <td>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/f/f2/Apple_Stage_1.png" alt="사과나무 묘목1단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/b/b3/Apple_Stage_2.png" alt="사과나무 묘목2단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/a/a7/Apple_Stage_3.png" alt="사과나무 묘목3단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/c/c8/Apple_Stage_4.png" alt="사과나무 묘목4단계" class="crop-image">
+                                    </td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/3/3b/Apple_Stage_5.png" alt="사과나무 묘목5단계" class="crop-image"></td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/0/0b/Apple_Stage_5_Fruit.png" alt="사과나무수확" class="crop-image"></td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/6/68/Apple_Sapling.png" alt="사과나무 묘목" class="crop-image">4,000g<br>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/a/a6/Traveling_Cart_Icon.png">여행카트:3,000~5,000g</td>
+                                    
+                                    
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/a1/Bundle_Purple.png/24px-Bundle_Purple.png">장인 꾸러미<br>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/9d/Cranberry_Candy.png/24px-Cranberry_Candy.png">크랜베리 캔디<br>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/2b/Bundle_Yellow.png/24px-Bundle_Yellow.png">사료 꾸러미<br></td>
+            
+                                </tr>
+            
+                                <tr>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/1b/Pomegranate.png/24px-Pomegranate.png">석류나무</td>
+                                    <td>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/f/ff/Pomegranate_Stage_1.png" alt="석류나무 묘목1단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/4/43/Pomegranate_Stage_2.png" alt="석류나무 묘목2단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/c/c7/Pomegranate_Stage_3.png" alt="석류나무 묘목3단계" class="crop-image">
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/d/d4/Pomegranate_Stage_4.png" alt="석류나무 묘목4단계" class="crop-image">
+                                    </td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/9/9c/Pomegranate_Stage_5.png" alt="석류나무 묘목5단계" class="crop-image"></td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/7/75/Pomegranate_Stage_5_Fruit.png" alt="석류나무수확" class="crop-image"></td>
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/1/10/Pomegranate_Sapling.png" alt="석류나무 묘목" class="crop-image">6,000g<br>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/a/a6/Traveling_Cart_Icon.png">여행카트:4,500~7,500g</td>
+                                    
+                                    
+                                    <td><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/a1/Bundle_Purple.png/24px-Bundle_Purple.png">장인 꾸러미<br>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/a1/Bundle_Purple.png/24px-Bundle_Purple.png">마법사 꾸러미<br>
+                                        <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/6f/Elliott_Icon.png/30px-Elliott_Icon.png">엘리엇 (사랑하는 선물)</td>
+            
+                                </tr>
+                                </tbody>
+                                </table>
+                                
+                        </div>
+                    </div>
+            
+                            </body>
+                            </html>
