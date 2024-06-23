@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet">
+    <title>스타듀밸리 동물 - 고양이와 개</title>
+    <style>
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 40px auto;
+            margin-left: -1px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            
+        }
+
+        .pet {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .pet img {
+            width: 80px;
+            height: auto;
+            border-radius: 10px;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
+        .pet h2 {
+            margin-top: 20px;
+        }
+
+        .pet p {
+            margin: 10px 0;
+        }
+
+        .pet-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .pet-table th, .pet-table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .pet-table th {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .pet-table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .pet-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .pet-table td {
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>스타듀밸리 동물 - 반려동물</h1>
+    <div class="main-container">
+        <aside class="side-bar">
+          <section class="side-bar__icon-box">
+            <section class="side-bar__icon-1">
+              <div></div>
+              <div></div>
+              <div></div>
+            </section>
+          </section>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-cat"></i> 작물 </a>
+              <ul>
+                <li><a href="crops.html">계절별 작물</a></li>
+                <li><a href="fruits.html">과일 나무</a></li>
+    
+              </ul>
+            </li>
+            <li>
+              <a href="#">동물</a>
+              <ul>
+                <li><a href="pet.html">반려동물</a></li>
+
+              </ul>
+            </li>
+            <li>
+              <a href="#">스킬</a>
+              <ul>
+                <li><a href="https://ko.stardewvalleywiki.com/%EC%8A%A4%ED%82%AC">농사</a></li>
+                <li><a href="#">채광</a></li>
+                <li><a href="#">낚시</a></li>
+                <li><a href="#">전투</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">게임플레이</a>
+              <ul>
+                <li><a href="#">호감도</a></li>
+                <li><a href="#">결혼과 자녀</a></li>
+                <li><a href="#">퀘스트</a></li>
+                <li><a href="#">꾸러미</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+       
+          <div class="content">
+    <div class="container">
+        <div class="pet" id="cat">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/1e/Cat_1.png/48px-Cat_1.png" alt="고양이">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/83/Cat_2.png/48px-Cat_2.png" alt="고양이">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/ec/Cat_3.png/48px-Cat_3.png" alt="고양이">
+            
+            <h2>고양이</h2>
+            <p>플레이어는 고양이와 개 중에 하나를 입양할 수 있습니다. <br>
+                입양할 동물은 캐릭터 생성 메뉴에서 선호하는 것으로 고른 것에 의해 좌우됩니다. <Br>플레이어는 3가지 타입의 고양이와 3가지 타입의 개 중에 고를 수 있습니다.</p>
+            <table class="pet-table">
+                <thead>
+                    <tr>
+                        <th>특징</th>
+                        <th>설명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>외모</td>
+                        <td>고양이는 다양한 색상과 패턴을 가지고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td>행동</td>
+                        <td>고양이는 집 주변을 돌아다니며, 플레이어가 쓰다듬을 수 있습니다.하루에 한번씩 쓰다듬을 수 있고 그때 하트가 뜨는 것을 볼 수 있습니다.<br>
+                        고양이가 당신을 사랑한다는 메세지가 뜬 후로 고양이를 쓰다듬을 때마다 랜덤으로 물에서 얻을 수 있는 아이템을 줍니다.</td>
+                    </tr>
+                    <tr>
+                        <td>애정</td>
+                        <td>매일 쓰다듬어주면 고양이의 애정도가 상승합니다. 우정포인트 1000을 달성하면 팝업 메시지를 받습니다. <br>
+                        ㅇㅇ이 당신을 사랑합니다. 이 메세지 반려동물의 우정은 게임내에서 확인할 수 없습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pet" id="dog">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/a4/Dog_1.png/48px-Dog_1.png" alt="개">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/bb/Dog_2.png/48px-Dog_2.png" alt="개">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/fc/Dog_3.png/48px-Dog_3.png" alt="개">
+            <h2>개</h2>
+            <p>개는 주로 집 주변을 산책하며 노는 것을 볼 수 있습니다.</p>
+            <table class="pet-table">
+                <thead>
+                    <tr>
+                        <th>특징</th>
+                        <th>설명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>외모</td>
+                        <td>개는 다양한 종을 선택할 수 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td>행동</td>
+                        <td>개는 집 주변을 돌아다니며, 플레이어가 쓰다듬을 수 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td>애정</td>
+                        <td>매일 쓰다듬어주면 개의 애정도가 상승합니다.우정포인트 1000을 달성하면 팝업 메시지를 받습니다. <br>
+                            ㅇㅇ이 당신을 사랑합니다. 이 메세지 반려동물의 우정은 게임내에서 확인할 수 없습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        let slides = document.getElementsByClassName("slides");
+
+        showSlides();
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 3000); // 3초마다 슬라이드 변경
+        }
+
+        function plusSlides(n) {
+            slideIndex += n - 1;
+            if (slideIndex >= slides.length) {slideIndex = 0}
+            if (slideIndex < 0) {slideIndex = slides.length - 1}
+            showSlides();
+        }
+
+        function showHoverImage(event, imageUrl) {
+            const hoverImage = document.getElementById('hover-image');
+            hoverImage.src = imageUrl;
+            hoverImage.style.display = 'block';
+            document.addEventListener('mousemove', moveHoverImage);
+        }
+
+        function moveHoverImage(event) {
+            const hoverImage = document.getElementById('hover-image');
+            hoverImage.style.left = event.pageX + 15 + 'px';
+            hoverImage.style.top = event.pageY + 15 + 'px';
+        }
+
+        function hideHoverImage() {
+            const hoverImage = document.getElementById('hover-image');
+            hoverImage.style.display = 'none';
+            document.removeEventListener('mousemove', moveHoverImage);
+        }
+
+        function showMap(mapSrc) {
+            document.getElementById('farm-map').src = mapSrc;
+            document.querySelector('.map-overlay').style.display = 'block';
+            document.querySelector('.map-modal').style.display = 'block';
+        }
+
+        function closeMap() {
+            document.querySelector('.map-overlay').style.display = 'none';
+            document.querySelector('.map-modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
